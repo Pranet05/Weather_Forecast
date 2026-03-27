@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunscreen Advisor</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
+
+    <h1>Hello, <%= name %>!</h1>
+    <h2>UV Forecast for <%= location %></h2>
+    
+    <p style="font-size: 20px;">
+        Current UV Index: <strong><%= uvIndex %></strong>
+    </p>
+    
+    <% if (needsSunscreen) { %>
+        <h3 style="color: #d9534f;">⚠️ Yes! The UV index is high. You need to apply sunscreen today.</h3>
+    <% } else { %>
+        <h3 style="color: #5cb85c;">✅ No sunscreen needed right now. The UV levels are safe!</h3>
+    <% } %>
+
+</body>
+</html>
